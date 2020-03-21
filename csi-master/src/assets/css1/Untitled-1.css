@@ -1,0 +1,82 @@
+.area-padding {
+    padding: 130px 0; }
+.area-heading {
+     margin-bottom: 85px;
+    text-align: center; }
+.area-heading h3 {
+    font-size: 36px;
+    color: #1a1d24;
+    position: relative;
+    text-transform: capitalize; }
+.area-heading h3 span {
+    color: #f81c1c;
+    font-style: italic; }
+.area-heading p {
+    font-size: 14px;
+    color: #797979; }
+    .single-blog {
+        transition: all 300ms linear 0s; }
+        .single-blog .thumb {
+          overflow: hidden; }
+          .single-blog .thumb img {
+            width: 100%;
+            transition: all 300ms linear 0s; }
+        .single-blog .short_details {
+          background: #f7f7f736;
+          padding: 30px 30px;
+          transition: all 300ms linear 0s; }
+          .single-blog .short_details a {
+            color: #1a1d24; }
+            .single-blog .short_details a:hover {
+              color: #f81c1c; }
+        .single-blog .meta-top {
+          margin-bottom: 15px; }
+          .single-blog .meta-top a {
+            display: inline-block;
+            margin-right: 27px;
+            color: #777;
+            position: relative;
+            transition: all 300ms linear 0s; }
+            .single-blog .meta-top a i {
+              margin-right: 10px;
+              font-size: 11px; }
+            .single-blog .meta-top a:hover {
+              color: #f81c1c; }
+        .single-blog h4 {
+          font-size: 20px;
+          margin-bottom: 15px;
+          font-weight: 700;
+          line-height: 30px;
+          transition: all 300ms linear 0s; }
+          @media (max-width: 991px) {
+            .single-blog h4 {
+              margin-bottom: 8px; } }
+        .single-blog:hover {
+          box-shadow: 0px 10px 36px 4px rgba(131, 131, 131, 0.12); }
+          .single-blog:hover .short_details {
+            background: #ffffff; }
+          .single-blog:hover img {
+            transform: scale(1.1); }
+        .single-blog .read-more {
+          font-size: 13px;
+          color: #1a1d24;
+          text-transform: uppercase; }
+          .single-blog .read-more i {
+            margin-left: 10px;
+            font-size: 11px; }
+        @media (max-width: 991px) {
+          .single-blog {
+            margin-bottom: 30px; } }
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important
+}
+.d-block {
+    display: block !important
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; }
+    a:hover, a:focus {
+      text-decoration: none;
+      outline: none; }
