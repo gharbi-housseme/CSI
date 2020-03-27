@@ -7,5 +7,9 @@
         ]
       }
     }
+  },
+  "projects": {
+    "siteCSI": "projcsi-29c89",
+    "project-csi": "projcsi-29c89"
   }
 }

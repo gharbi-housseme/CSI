@@ -131,6 +131,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "project-csi"
+    }
+  },
+  "defaultProject": "project-csi",
+  "cli": {
+    "analytics": "b15507ba-f6bc-4d1b-855f-7150f20b3230"
+  }
 }
