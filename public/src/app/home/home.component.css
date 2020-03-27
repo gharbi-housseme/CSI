@@ -1,0 +1,111 @@
+.image{
+    width: 100%;
+    height: 100%;
+  }
+#presentation{
+  background: url("../../assets/img/bg1.svg") no-repeat;
+  background-size: cover
+}
+.title{
+  padding: 30px 0;
+}
+.para{
+  margin: 10% 0;
+}
+#formation{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../../assets/img/formation.jpg") center no-repeat;
+  background-attachment: fixed;
+}
+#formation img{
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 9px;
+}
+.box{
+  position: relative;
+  
+}
+.formation{
+  position :absolute;
+  top:0%;
+  bottom:0;
+  left: 0%;
+  right:0;
+  margin:10px;
+  background-color: rgba(48, 44, 44,0.8 );
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color :white;
+}
+
+.carousel-item{
+  width: 100%;
+  height: 90vh
+}
+.carousel-item > img{
+  width: 100%;
+  height: 100%
+}
+.carousel-caption{
+  margin-bottom: 13%;
+}
+.carousel-caption > * {
+  position: relative;
+  animation-delay: 0.5s;
+  transition : all 0.5s ease;
+}
+.carousel-caption button:hover{
+  font-family: "hacked";
+}
+.canyou{
+  background : #16daf0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    font-family: "hacked";
+  }
+  .d-flex > li {
+    list-style-type: none;
+  }
+  .d-flex {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease;
+    background: rgb(49, 48, 48);
+  }
+  .open {
+    clip-path: circle(700px at 90% 10%);
+  }
+   .burger i{
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+  }
+  .nav-link{
+    z-index: 0 !important;
+  }
+}

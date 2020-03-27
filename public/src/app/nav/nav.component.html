@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-sm fluid-container desktop sticky-top" [class.header-scrolled]="scrolled">
+  <a class="navbar-brand animated fadeInLeftBig" style="animation-delay: 1.1s" ><img src="../assets/img/logo.png" alt="logo"></a>
+  <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/presentation">About us</a> 
+    </li>
+    <li class="nav-item dropdown animated fadeInRightBig">
+      <a class="nav-link dropdown-toggle"  routerLink="/evenements" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Events</a>
+      <div class="dropdown-menu animated fadeInUp" aria-labelledby="dropdownId">
+        <a class="dropdown-item" href="/hackme">Hack Me If You Can</a>
+        <div class="dropdown-divider mx-3"></div>
+        <a class="dropdown-item" href="/hackzone">Hack Zone</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown animated fadeInRightBig ">
+      <a class="nav-link" routerLink="/formations" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Trainings</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/sponsors">Our Sponsors</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- nav bar for the mobile view -->
+<nav class="navbar navbar-expand-sm mobile sticky-top">
+    <a class="navbar-brand wow fadeInLeftBig" href="#"><img src="../assets/img/logo.png" alt="logo"></a>
+    <span class="bg-light burger" (click)="show=!show"><i class="fas fa-align-justify"></i></span>
+    <ul class="d-flex flex-column" [class.open]="show">
+        <li class="nav-item animated" [class.fadeInRightBig]="show">
+            <a class="nav-link" routerLink="/" (click)="show=!show">Home</a>
+          </li>
+          <li class="nav-item  animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/presentation" (click)="show=!show">About us</a>
+          </li>
+          <li class="nav-item dropdown animated" [class.fadeInRightBig]="show">
+            <a class="nav-link dropdown-toggle"  routerLink="/evenements" id="dropdownId" data-toggle="dropdown">Our Events</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#" (click)="show=!show">Hack Me If You Can</a>
+              <a class="dropdown-item" href="#" (click)="show=!show">Hack Zone</a>
+            </div>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/formations" (click)="show=!show">Our Trainings</a>
+          </li>
+          
+          <!-- <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/evenements" (click)="show=!show">Evenements</a>
+          </li> -->
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/sponsors" (click)="show=!show">Our Sponsors</a>
+          </li>
+
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/contact" (click)="show=!show">Contact Us</a>
+          </li>
+    </ul>
+</nav>

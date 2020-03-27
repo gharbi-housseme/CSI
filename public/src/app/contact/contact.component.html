@@ -1,0 +1,166 @@
+<div>
+  <br>
+  <br>
+  <br>
+    <div class="container">
+      <div class="row section">
+       <div class="col-12 col-sm-4">
+        <div>
+          <img class="card-img-top" src="../assets/images/logoo.png" alt="Home">
+        </div>
+       </div>
+        <div class="col-12 col-sm-7 p-5 margin-auto">
+          <p class="title text-center">For any further information, don't hesitate to contact us !</p>
+  
+          <ng-container *ngIf="!success">
+            <form (ngSubmit)="submit()" [formGroup]="contactForm">
+              <div class="row">
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="name" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.name.errors || errors.name) }"
+                      placeholder="YOUR FULL NAME" />
+                    <div *ngIf="isSubmitted && errors.name" class="invalid">
+                      <div>{{ errors.name }} </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.email.errors || errors.email) }" placeholder="YOUR EMAIL"
+                      formControlName="email" />
+                    <div *ngIf="isSubmitted && errors && errors.email" class="invalid">
+                      <div>{{ errors.email[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.subject.errors || errors.subject)}" formControlName="subject"
+                      placeholder="SUBJECT" />
+                    <div *ngIf="isSubmitted && errors && errors.subject" class="invalid">
+                      <div>{{ errors.subject[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <textarea class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.message.errors || errors.message)}"
+                      formControlName="message" placeholder="MESSAGE"></textarea>
+                    <div *ngIf="isSubmitted && errors && errors.message" class="invalid">
+                      <div>{{ errors.message[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <button class="btn btn-primary btn-block button">Submit</button>
+                </div>
+              </div>
+            </form>
+          </ng-container>
+  
+          <ng-container *ngIf="success">
+            <div class="success-container text-center">
+              <div class="success-circle">
+                <div class="content">
+                  <fa name="check"></fa>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <p class="title">Thank you!</p>
+                <p class="title-sm">We will get back to you shortly</p>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  
+  
+    
+    <div class="container mt-4">
+            
+            <div class="row section">
+              <div class="col-12 text-center">
+                <h1>What we promote?</h1>
+                
+              </div>
+            </div>  
+  
+      <div class="row section text-center">
+        <div class="col-12 col-sm-4">
+          <div class="card">
+            <div class="text-center">
+              <img class="mt-4" height="50" src="../assets/images/eye-open.png" alt="vision">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Vision</h4>
+              <p class="card-text"> We aim to achieve all our goals and exceed our members’ expectations through our commitment to high standards.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-4">
+          <div class="card">
+            <div class="text-center">
+              <img class="mt-4" height="50" src="../assets/images/mission.png" alt="Mission">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Mission</h4>
+              <p class="card-text">Our mission is to provide interesting trainings and ressources to our members through a bespoke service.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-4">
+          <div class="card">
+            <div class="text-center">
+              <img class="mt-4" height="50" src="../assets/images/value.png" alt="value">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Value</h4>
+              <p class="card-text">We offer a rewarding and challenging environment where personal development can flourish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+        
+  
+      <!-- Our Clients -->
+    <div class="row mt-5 text-center">
+      <div class="col-12 col-sm-12">
+        <h1>Partners who trusted us in last year's edition</h1>
+      </div>
+
+      <div class="container">
+        <div class="center">
+          <div class="responseimg center"><a href="#" target="_blank"><img src="../../assets/img/sponsors-img/partners/poste.jpg" height=150 width=150  alt=""></a></div>
+          <div class="responseimg center"><a href="#" target="_blank"><img src="../../assets/img/sponsors-img/partners/infor 300x300.png" height=150 width=150 alt=""></a></div>
+          <div class="responseimg center"><a href="#" target="_blank"><img src="../../assets/img/sponsors-img/partners/accessNow.png" height=50 width=250 alt=""></a></div>
+          <div class="responseimg center"><a href="#" target="_blank"><img src="../../assets/img/sponsors-img/partners/io 300x300.png" height=150 width=150 alt=""></a></div>
+        </div>
+    </div>
+          
+    </div>
+</div>
+
+         
+          
+         
+
+   
+   

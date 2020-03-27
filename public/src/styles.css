@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/* color : #16daf0 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+    font-family: hacked;
+    src: url(./assets/fonts/hacked/Hacked-KerX.ttf);
+  }
+.hacked{
+    font-family: "hacked";
+}
+.body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.scrolltop i{
+    font-size: 25px;
+    padding: 10px 15px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.scrolltop:hover i{
+    background-color: #16daf0;
+    color :white
+}
+.scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    transition: all 1s ease; 
+    margin-right: -200px;
+    opacity:0; 
+}
+.appear{
+    margin: 0;
+    z-index: 100;
+    opacity: 1;
+}

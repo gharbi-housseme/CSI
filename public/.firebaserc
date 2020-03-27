@@ -1,0 +1,15 @@
+{
+  "targets": {
+    "projcsi-29c89": {
+      "hosting": {
+        "project-csi": [
+          "projcsi-29c89"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "siteCSI": "projcsi-29c89",
+    "project-csi": "projcsi-29c89"
+  }
+}

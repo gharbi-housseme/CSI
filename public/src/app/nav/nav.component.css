@@ -1,0 +1,144 @@
+.nav-item:nth-child(1) {
+  animation-delay: 1s;
+}
+.nav-item:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.nav-item:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.nav-item:nth-child(4) {
+  animation-delay: 1.9s;
+}
+.nav-item:nth-child(5) {
+  animation-delay: 2.2s;
+}
+.nav-item:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.nav-item:nth-child(7) {
+  animation-delay: 2.8s;
+}
+.nav-item:nth-child(8) {
+  animation-delay: 3.1s;
+}
+.nav-link:hover, .nav-link:focus, .header-scrolled .nav-link:hover, .header-scrolled .nav-link:focus{
+  color:#16daf0 !important
+}
+.desktop{
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 1px white;
+  position : fixed;
+  width: 100%;
+  background: rgb(49, 48, 48);
+  font-family: "hacked";
+}
+.nav-link{
+  color: white !important;
+  transition : all 0.2s ease;
+}
+.nav-link:hover{
+  transform : scale(1.2);
+  margin : 0 10px;
+  
+ 
+}
+.header-scrolled{
+  padding-top: 15px ;
+  padding-bottom: 15px;
+  background-color: rgba(206, 206, 206,0.9);
+  box-shadow: 0 1px 1px 1px white;
+ 
+}
+.header-scrolled .nav-link{
+  color: black !important
+}
+.mobile{
+    display: none;
+    background: rgb(49, 48, 48);
+  }
+.navbar-brand img{
+  width: 80px;
+  height: 60px;
+  margin: -10px 20px;
+}
+.dropdown-menu{
+  /* background: rgb(53, 36, 36); */
+  background-color: #16daf0 !important;
+  animation-duration: 0.3s;
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-item:hover{
+  background: black ;
+  color:  #16daf0
+}
+.carousel-item{
+  width: 100%;
+  height: 90vh
+}
+.carousel-item > img{
+  width: 100%;
+  height: 100%
+}
+.carousel-caption{
+  margin-bottom: 13%;
+}
+.carousel-caption > * {
+  position: relative;
+  animation-delay: 0.5s;
+  transition : all 0.5s ease;
+}
+.carousel-caption button:hover{
+  font-family: "hacked";
+}
+.canyou{
+  background : #16daf0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    font-family: "hacked";
+  }
+  .d-flex > li {
+    list-style-type: none;
+  }
+  .d-flex {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease;
+    background: rgb(49, 48, 48);
+  }
+  .open {
+    clip-path: circle(700px at 90% 10%);
+  }
+   .burger i{
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+  }
+  .nav-link{
+    z-index: 0 !important;
+  }
+}
