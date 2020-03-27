@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "project-csi",
+      "public": "dist/project-csi",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

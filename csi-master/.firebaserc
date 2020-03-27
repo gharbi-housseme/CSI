@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "projcsi-29c89": {
+      "hosting": {
+        "project-csi": [
+          "projcsi-29c89"
+        ]
+      }
+    }
+  }
+}

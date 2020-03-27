@@ -1,0 +1,213 @@
+<div>
+  <br>
+  <br>
+  <br>
+    <div class="container">
+      <div class="row section">
+       <div class="col-12 col-sm-4">
+        <div>
+          <img class="card-img-top" src="../assets/images/HZpp.png" alt="Home">
+        </div>
+       </div>
+        <div class="col-12 col-sm-7 p-5 margin-auto">
+         
+ 
+
+          <ng-container *ngIf="!success">
+            <form (ngSubmit)="submit()" [formGroup]="hzformForm">
+              <h3>TEAM NAME</h3>
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.teamname.errors || errors.teamname)}" formControlName="teamname"
+                      placeholder="TEAM NAME" />
+                    <div *ngIf="isSubmitted && errors && errors.teamname" class="invalid">
+                      <div>{{ errors.teamname }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3>First Player</h3>
+              <div class="row">
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="fname1" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.fname1.errors || errors.fname1) }"
+                      placeholder="FIRST NAME"  />
+                    <div *ngIf="isSubmitted && errors.fname1" class="invalid">
+                      <div>{{ errors.fname1 }} </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="lname1" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.lname1.errors || errors.lname1) }"
+                      placeholder="LAST NAME"  />
+                    <div *ngIf="isSubmitted && errors.lname1" class="invalid">
+                      <div>{{ errors.name }} </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.school1.errors || errors.school1)}" formControlName="school1"
+                      placeholder="SCHOOL/ORGANIZATION" />
+                    <div *ngIf="isSubmitted && errors && errors.school1" class="invalid">
+                      <div>{{ errors.school1 }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.email1.errors || errors.email1) }" placeholder="EMAIL ADDRESS"
+                      formControlName="email1" />
+                    <div *ngIf="isSubmitted && errors && errors.email1" class="invalid">
+                      <div>{{ errors.email[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+          <h3>Second Player</h3>
+
+      
+              <div class="row">
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="fname2" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.fname2.errors || errors.fname2) }"
+                      placeholder="FIRST NAME"  />
+                    <div *ngIf="isSubmitted && errors.fname2" class="invalid">
+                      <div>{{ errors.fname2 }} </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="lname2" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.lname2.errors || errors.lname2) }"
+                      placeholder="LAST NAME"  />
+                    <div *ngIf="isSubmitted && errors.lname2" class="invalid">
+                      <div>{{ errors.lname2 }} </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.school2.errors || errors.school2)}" formControlName="school2"
+                      placeholder="SCHOOL/ORGANIZATION" />
+                    <div *ngIf="isSubmitted && errors && errors.school2" class="invalid">
+                      <div>{{ errors.school2 }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.email2.errors || errors.email2) }" placeholder="EMAIL ADDRESS"
+                      formControlName="email2" />
+                    <div *ngIf="isSubmitted && errors && errors.email2" class="invalid">
+                      <div>{{ errors.email2[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+          <h3>Third Player</h3>
+
+         
+              <div class="row">
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="fname3" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.fname3.errors || errors.fname3) }"
+                      placeholder="FIRST NAME"  />
+                    <div *ngIf="isSubmitted && errors.fname3" class="invalid">
+                      <div>{{ errors.fname3 }} </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="form-group">
+                    <input formControlName="lname3" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.lname3.errors || errors.lname3) }"
+                      placeholder="LAST NAME"  />
+                    <div *ngIf="isSubmitted && errors.lname3" class="invalid">
+                      <div>{{ errors.lname3 }} </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.school3.errors || errors.school3)}" formControlName="school3"
+                      placeholder="SCHOOL/ORGANIZATION" />
+                    <div *ngIf="isSubmitted && errors && errors.school3" class="invalid">
+                      <div>{{ errors.school3 }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control"
+                      [ngClass]="{ 'is-invalid': isSubmitted && (f.email3.errors || errors.email3) }" placeholder="EMAIL ADDRESS"
+                      formControlName="email3" />
+                    <div *ngIf="isSubmitted && errors && errors.email3" class="invalid">
+                      <div>{{ errors.email3[0] }} </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <button class="btn btn-primary btn-block button">Submit</button>
+                </div>
+              </div>
+            </form>
+          </ng-container>
+            
+      <!--Form validation-->
+          <ng-container *ngIf="success">
+            <div class="success-container text-center">
+              <div class="success-circle">
+                <div class="content">
+                  <fa name="check"></fa>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <p class="title">Welcome among us!</p>
+                <p class="title-sm">We wish you a good hack !</p>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
