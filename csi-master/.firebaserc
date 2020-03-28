@@ -10,6 +10,9 @@
   },
   "projects": {
     "siteCSI": "projcsi-29c89",
-    "project-csi": "projcsi-29c89"
+    "project-csi": "projcsi-29c89",
+    "sitecsi": "projcsi-29c89",
+    "sitecs1": "projcsi-29c89",
+    "vfsite": "projcsi-29c89"
   }
 }
