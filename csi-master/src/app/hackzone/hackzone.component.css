@@ -885,7 +885,7 @@ animation: slide 15s linear infinite; }
             margin-top: -20px;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image:url("../../assets/images/background.jpg");	
+            background-image:url("../../assets/images/background.png");	
             height: 800px;
             color: #fff;
             justify-content: center;
